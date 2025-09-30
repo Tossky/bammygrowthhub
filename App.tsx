@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import SeoVisibilityPage from './pages/SeoVisibilityPage';
-import DigitalMarketingPage from './pages/DigitalMarketingPage';
-import BusinessGrowthPage from './pages/BusinessGrowthPage';
-import InnovationFuturePage from './pages/InnovationFuturePage';
-import AboutPage from './pages/AboutPage';
-import IndustriesPage from './pages/IndustriesPage';
-import BecomeAClientPage from './pages/BecomeAClientPage';
-import CaseStudyPage from './pages/CaseStudyPage';
-import PricingPage from './pages/PricingPage';
-import IndustryDetailPage from './pages/IndustryDetailPage';
-import FreeSeoAuditPage from './pages/FreeSeoAuditPage';
+import Header from './Header';
+import Footer from './Footer';
+import HomePage from './HomePage';
+import SeoVisibilityPage from './SeoVisibilityPage';
+import DigitalMarketingPage from './DigitalMarketingPage';
+import BusinessGrowthPage from './BusinessGrowthPage';
+import InnovationFuturePage from './InnovationFuturePage';
+import AboutPage from './AboutPage';
+import IndustriesPage from './IndustriesPage';
+import BecomeAClientPage from './BecomeAClientPage';
+import CaseStudyPage from './CaseStudyPage';
+import PricingPage from './PricingPage';
+import IndustryDetailPage from './IndustryDetailPage';
+import FreeSeoAuditPage from './FreeSeoAuditPage';
 
 
 /**
