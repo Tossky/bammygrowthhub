@@ -3,12 +3,13 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Logo = () => (
     <div className="flex items-center space-x-2">
-        <div className="w-8 h-8">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0L29.3923 10H10.6077L20 0Z" fill="#44001b"/>
-                <path d="M10 12.5L20 30L30 12.5L20 12.5H10Z" fill="#3A3A3A"/>
-            </svg>
-        </div>
+        <img 
+            src="/logo.png" 
+            alt="Bammy Growth Hub" 
+            className="h-10 w-auto"
+        />
+        </svg>
+    </div>
         <span className="font-bold text-lg text-gray-800">BAMMY GROWTH HUB</span>
     </div>
 );
