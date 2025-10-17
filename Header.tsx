@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Logo = () => (
     <div className="flex items-center space-x-2">
         <img 
-            src="https://github.com/Tossky/bammygrowthhub/blob/main/logo.png" 
+            src="logo.png" 
             alt="Bammy Growth Hub" 
             className="h-10 w-auto"
         />
