@@ -371,7 +371,7 @@ const HomePage = () => {
                 </Link>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-                <img src="https://picsum.photos/400/400?random=1" alt="Toluwalope Akano, Founder & CEO" className="rounded-full shadow-2xl w-80 h-80 object-cover" />
+                <img src="Bammy Growth Hub, BammyGrowthHub, Marketing agency (2).png" alt="Toluwalope Akano, Founder & CEO" className="rounded-full shadow-2xl w-80 h-80 object-cover" />
             </div>
         </div>
       </section>
