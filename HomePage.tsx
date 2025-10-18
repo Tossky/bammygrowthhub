@@ -371,7 +371,11 @@ const HomePage = () => {
                 </Link>
             </div>
             <div className="order-1 lg:order-2 flex justify-center">
-                <img src="Bammy Growth Hub, BammyGrowthHub, Marketing agency (2).png" alt="Toluwalope Akano, Founder & CEO" className="rounded-full shadow-2xl w-80 h-80 object-cover" />
+                <img 
+  src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
+  alt="Bammy Growth Hub" 
+  className="h-10 w-auto"
+/>
             </div>
         </div>
       </section>
