@@ -361,6 +361,7 @@ const HomePage = () => {
        {/* Founder Section */}
 <section id="founder" className="py-20 bg-[#F6F1EC]">
   <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    {/* Text Section */}
     <div className="order-2 lg:order-1">
       <h2 className="text-3xl font-bold text-gray-900 mb-4">Who Is Toluwalope Akano</h2>
       <p className="text-[#44001b] font-semibold text-lg mb-4">Founder & CEO, Bammy Growth Hub</p>
@@ -371,11 +372,13 @@ const HomePage = () => {
         Learn More About Our Team <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
       </Link>
     </div>
+
+    {/* Image Section */}
     <div className="order-1 lg:order-2 flex justify-center">
       <img 
         src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
         alt="Toluwalope Akano, Founder & CEO" 
-        className="rounded-full shadow-2xl w-80 h-80 object-cover" 
+        className="rounded-full shadow-2xl w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] object-cover"
       />
     </div>
   </div>
