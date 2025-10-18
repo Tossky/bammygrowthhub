@@ -33,14 +33,15 @@ const TeamMember: React.FC<TeamMemberProps> = ({ imageUrl, name, title, bio }) =
     </div>
 );
 
-
 const AboutPage = () => {
     return (
         <div className="bg-white">
             {/* Hero Section */}
             <section className="bg-[#F6F1EC] pt-24 pb-16 text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h1 className="text-5xl font-extrabold text-gray-900 mb-4">We're More Than an Agency. We're Bammy Growth Hub.</h1>
+                    <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+                        We're More Than an Agency. We're Bammy Growth Hub.
+                    </h1>
                     <p className="text-xl text-gray-600">
                         Founded on the principle of partnership, Bammy Growth Hub exists to forge lasting relationships with businesses and drive success that goes beyond the balance sheet.
                     </p>
@@ -69,7 +70,9 @@ const AboutPage = () => {
             {/* Our Values Section */}
             <section className="py-20 bg-[#F6F1EC]">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">The Principles That Guide Bammy Growth Hub</h2>
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                        The Principles That Guide Bammy Growth Hub
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ValueCard
                             icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
@@ -95,13 +98,28 @@ const AboutPage = () => {
                 <div className="max-w-5xl mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold text-gray-900 mb-12">The Experts Behind Your Growth</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                        <TeamMember imageUrl="https://picsum.photos/200/200?random=1" name="Toluwalope Akano" title="Founder & CEO" bio="As the visionary behind Bammy Growth Hub, Toluwalope is passionate about crafting holistic strategies that drive transformative growth and uncover the hidden potential in every partner's business." />
-                        <TeamMember imageUrl="https://picsum.photos/200/200?random=2" name="Maria Garcia" title="Head of SEO" bio="Maria lives and breathes search engine optimization. Her technical expertise ensures our clients' websites are perfectly tuned for visibility." />
-                        <TeamMember imageUrl="https://picsum.photos/200/200?random=3" name="David Chen" title="PPC & Ads Specialist" bio="David is an expert at turning ad spend into revenue. He manages multi-platform campaigns with a laser focus on conversion and ROI." />
+                        <TeamMember 
+                            imageUrl="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
+                            name="Toluwalope Akano" 
+                            title="Founder & CEO" 
+                            bio="As the visionary behind Bammy Growth Hub, Toluwalope is passionate about crafting holistic strategies that drive transformative growth and uncover the hidden potential in every partner's business." 
+                        />
+                        <TeamMember 
+                            imageUrl="https://picsum.photos/200/200?random=2" 
+                            name="Israel Oyinlola" 
+                            title="Developer" 
+                            bio="Israel is a skilled developer focused on building user-friendly and high-performing web solutions that support business growth and digital transformation." 
+                        />
+                        <TeamMember 
+                            imageUrl="https://picsum.photos/200/200?random=3" 
+                            name="Emmanuel Oyinlola" 
+                            title="PPC & Ads Specialist" 
+                            bio="Emmanuel is an expert at turning ad spend into measurable revenue. He manages campaigns with precision, ensuring the highest possible ROI for every client." 
+                        />
                     </div>
                 </div>
             </section>
-            
+
             {/* CTA Section */}
             <section className="py-20 bg-[#44001b] text-white">
                 <div className="max-w-3xl mx-auto px-4 text-center">
@@ -117,7 +135,6 @@ const AboutPage = () => {
                     </Link>
                 </div>
             </section>
-
         </div>
     );
 };
