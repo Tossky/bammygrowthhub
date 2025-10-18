@@ -3,13 +3,12 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Logo = () => (
     <div className="flex items-center space-x-2">
-        <img 
-            src="logo.png" 
-            alt="Bammy Growth Hub" 
-            className="h-10 w-auto"
-        />
-        </svg>
-    </div>
+  <img 
+    src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/logo.png" 
+    alt="Bammy Growth Hub" 
+    className="h-10 w-auto"
+  />
+</div>
         <span className="font-bold text-lg text-gray-800">BAMMY GROWTH HUB</span>
     </div>
 );
