@@ -1,16 +1,15 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Logo = () => (
-    <div className="flex items-center space-x-2">
-  <img 
-    src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/logo.png" 
-    alt="Bammy Growth Hub" 
-    className="h-10 w-auto"
-  />
-</div>
-        <span className="font-bold text-lg text-gray-800">BAMMY GROWTH HUB</span>
-    </div>
+  <div className="flex items-center space-x-2">
+    <img 
+      src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/logo.png" 
+      alt="Bammy Growth Hub" 
+      className="h-10 w-auto"
+    />
+    <span className="font-bold text-lg text-gray-800">BAMMY GROWTH HUB</span>
+  </div>
 );
 
 const ChevronDownIcon = ({ className }: { className?: string }) => (
@@ -19,26 +18,19 @@ const ChevronDownIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-
 const LocationIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-    </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>
 );
-
 
 const Header = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const handleMouseEnter = () => {
-    setIsServicesOpen(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsServicesOpen(false);
-  };
+  const handleMouseEnter = () => setIsServicesOpen(true);
+  const handleMouseLeave = () => setIsServicesOpen(false);
   
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
@@ -47,6 +39,8 @@ const Header = () => {
           <Link to="/">
             <Logo />
           </Link>
+
+          {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <div 
               className="relative" 
@@ -63,6 +57,7 @@ const Header = () => {
                   className="absolute -left-1/2 mt-2 w-[800px] transform translate-x-[-25%] p-8 bg-[#44001b] text-white rounded-lg shadow-xl"
                 >
                   <div className="grid grid-cols-4 gap-8">
+                    {/* SEO & Visibility */}
                     <div>
                       <h3 className="font-bold text-lg mb-2 border-b border-gray-500 pb-2">SEO & Visibility</h3>
                       <p className="text-sm text-gray-400 mt-2 mb-4">Boost your organic presence and connect with local customers.</p>
@@ -72,6 +67,8 @@ const Header = () => {
                         <li><Link to="/services/seo-visibility#process" className="hover:text-gray-300 transition-colors duration-200 flex items-center"><span className="text-gray-400 mr-2">&rsaquo;</span> View Our SEO Process</Link></li>
                       </ul>
                     </div>
+
+                    {/* Digital Marketing */}
                     <div>
                       <h3 className="font-bold text-lg mb-2 border-b border-gray-500 pb-2">Digital Marketing</h3>
                       <p className="text-sm text-gray-400 mt-2 mb-4">Engage your audience across the entire customer journey.</p>
@@ -81,6 +78,8 @@ const Header = () => {
                         <li><Link to="/services/digital-marketing#client-results" className="hover:text-gray-300 transition-colors duration-200 flex items-center"><span className="text-gray-400 mr-2">&rsaquo;</span> See Client Results</Link></li>
                       </ul>
                     </div>
+
+                    {/* Business Growth */}
                     <div>
                       <h3 className="font-bold text-lg mb-2 border-b border-gray-500 pb-2">Business Growth</h3>
                       <p className="text-sm text-gray-400 mt-2 mb-4">Strategic consulting to scale your operations and revenue.</p>
@@ -90,6 +89,8 @@ const Header = () => {
                         <li><Link to="/services/business-growth#partner" className="hover:text-gray-300 transition-colors duration-200 flex items-center"><span className="text-gray-400 mr-2">&rsaquo;</span> Why Partner With Us</Link></li>
                       </ul>
                     </div>
+
+                    {/* Innovation & Future */}
                     <div>
                       <h3 className="font-bold text-lg mb-2 border-b border-gray-500 pb-2">Innovation & Future</h3>
                       <p className="text-sm text-gray-400 mt-2 mb-4">Leverage emerging tech to build a competitive advantage.</p>
@@ -103,14 +104,17 @@ const Header = () => {
                 </div>
               )}
             </div>
+
             <NavLink to="/about" className="text-gray-700 hover:text-[#44001b] transition-colors duration-200 font-medium">About</NavLink>
             <NavLink to="/industries" className="text-gray-700 hover:text-[#44001b] transition-colors duration-200 font-medium">Industries</NavLink>
             <NavLink to="/become-a-client" className="text-gray-700 hover:text-[#44001b] transition-colors duration-200 font-medium">Become a Client</NavLink>
             <NavLink to="/pricing" className="text-gray-700 hover:text-[#44001b] transition-colors duration-200 font-medium">Pricing</NavLink>
           </nav>
+
+          {/* Right section */}
           <div className="flex items-center space-x-4">
             <a 
-              href="https://www.google.com/maps/dir/Bammy+Growth+Hub,+Ayetoro+Scheme,+Oyo/No+31.+Lane+5+Ayetoro+Scheme,+Ayetoro,+Oyo+202104,+Oyo/@8.1573726,3.5322524,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x1030c9f3934933f9:0x6763882554d49bfb!2m2!1d3.6146534!2d8.1573809!1m5!1m1!1s0x1030c9f3934933f9:0x6763882554d49bfb!2m2!1d3.6146534!2d8.1573809?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D" 
+              href="https://www.google.com/maps/dir/Bammy+Growth+Hub,+Ayetoro+Scheme,+Oyo/No+31.+Lane+5+Ayetoro+Scheme,+Ayetoro,+Oyo+202104,+Oyo/"
               target="_blank" 
               rel="noopener noreferrer" 
               className="p-2 rounded-full hover:bg-gray-100 transition-colors"
