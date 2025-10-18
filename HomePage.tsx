@@ -358,27 +358,28 @@ const HomePage = () => {
         </section>
 
       {/* Founder Section */}
-       <section id="founder" className="py-20 bg-[#F6F1EC]">
-        <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Who Is Toluwalope Akano</h2>
-                <p className="text-[#44001b] font-semibold text-lg mb-4">Founder & CEO, Bammy Growth Hub</p>
-                <p className="text-lg text-gray-600 mb-6">
-                    Toluwalope Akano is a multifaceted marketing expert and agency owner, specializing in ecommerce and business online presence growth, SEO optimization, brand development, and creative design with a passion for driving business success.
-                </p>
-                <Link to="/about" className="font-semibold text-[#44001b] hover:text-[#2d0012] transition-colors group">
-                    Learn More About Our Team <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
-                </Link>
-            </div>
-            <div className="order-1 lg:order-2 flex justify-center">
-                <img 
-  src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
-  alt="Bammy Growth Hub" 
-  className="h-10 w-auto"
-/>
-            </div>
-        </div>
-      </section>
+       {/* Founder Section */}
+<section id="founder" className="py-20 bg-[#F6F1EC]">
+  <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div className="order-2 lg:order-1">
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">Who Is Toluwalope Akano</h2>
+      <p className="text-[#44001b] font-semibold text-lg mb-4">Founder & CEO, Bammy Growth Hub</p>
+      <p className="text-lg text-gray-600 mb-6">
+        Toluwalope Akano is a multifaceted marketing expert and agency owner, specializing in ecommerce and business online presence growth, SEO optimization, brand development, and creative design with a passion for driving business success.
+      </p>
+      <Link to="/about" className="font-semibold text-[#44001b] hover:text-[#2d0012] transition-colors group">
+        Learn More About Our Team <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+      </Link>
+    </div>
+    <div className="order-1 lg:order-2 flex justify-center">
+      <img 
+        src="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
+        alt="Toluwalope Akano, Founder & CEO" 
+        className="rounded-full shadow-2xl w-80 h-80 object-cover" 
+      />
+    </div>
+  </div>
+</section>
 
       {/* FAQ Section */}
       <section id="faq" className="py-20 bg-white">
