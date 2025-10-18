@@ -26,7 +26,11 @@ interface TeamMemberProps {
 
 const TeamMember: React.FC<TeamMemberProps> = ({ imageUrl, name, title, bio }) => (
     <div className="text-center">
-        <img className="mx-auto h-40 w-40 rounded-full object-cover shadow-lg" src={imageUrl} alt={name} />
+        <img
+            className="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
+            src={imageUrl}
+            alt={name}
+        />
         <h3 className="mt-6 text-xl font-semibold text-gray-900">{name}</h3>
         <p className="text-[#44001b] font-medium">{title}</p>
         <p className="mt-2 text-gray-600">{bio}</p>
@@ -39,7 +43,9 @@ const AboutPage = () => {
             {/* Hero Section */}
             <section className="bg-[#F6F1EC] pt-24 pb-16 text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h1 className="text-5xl font-extrabold text-gray-900 mb-4">We're More Than an Agency. We're Bammy Growth Hub.</h1>
+                    <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
+                        We're More Than an Agency. We're Bammy Growth Hub.
+                    </h1>
                     <p className="text-xl text-gray-600">
                         Founded on the principle of partnership, Bammy Growth Hub exists to forge lasting relationships with businesses and drive success that goes beyond the balance sheet.
                     </p>
@@ -60,7 +66,11 @@ const AboutPage = () => {
                         </p>
                     </div>
                     <div>
-                        <img src="https://picsum.photos/600/500?random=11" alt="Team discussing strategy" className="rounded-lg shadow-xl" />
+                        <img
+                            src="https://picsum.photos/600/500?random=11"
+                            alt="Team discussing strategy"
+                            className="rounded-lg shadow-xl"
+                        />
                     </div>
                 </div>
             </section>
@@ -68,20 +78,36 @@ const AboutPage = () => {
             {/* Our Values Section */}
             <section className="py-20 bg-[#F6F1EC]">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">The Principles That Guide Bammy Growth Hub</h2>
+                    <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+                        The Principles That Guide Bammy Growth Hub
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ValueCard
-                            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+                            icon={
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            }
                             title="Results-Driven"
                             description="We are obsessed with performance. Our strategies are designed not just for traffic, but for meaningful conversions and a strong ROI."
                         />
                         <ValueCard
-                            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM12 14c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM12 20c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" /></svg>}
+                            icon={
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zM12 14c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zM12 20c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
+                                </svg>
+                            }
                             title="True Partnership"
                             description="We act as an extension of your team. Your challenges are our challenges, and your success is our ultimate reward."
                         />
                         <ValueCard
-                            icon={<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M12 14l9-5-9-5-9 5 9 5z" /><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" /><path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>}
+                            icon={
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                </svg>
+                            }
                             title="Radical Transparency"
                             description="Clear, honest communication is non-negotiable. We provide detailed reports and are always upfront about our process and progress."
                         />
@@ -94,28 +120,28 @@ const AboutPage = () => {
                 <div className="max-w-5xl mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold text-gray-900 mb-12">The Experts Behind Your Growth</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                        <TeamMember 
-                            imageUrl="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png" 
-                            name="Toluwalope Akano" 
-                            title="Founder & CEO" 
-                            bio="As the visionary behind Bammy Growth Hub, Toluwalope is passionate about crafting holistic strategies that drive transformative growth and uncover the hidden potential in every partner's business." 
+                        <TeamMember
+                            imageUrl="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/Bammy%20Growth%20Hub%2C%20BammyGrowthHub%2C%20Marketing%20agency%20(2).png"
+                            name="Toluwalope Akano"
+                            title="Founder & CEO"
+                            bio="As the visionary behind Bammy Growth Hub, Toluwalope is passionate about crafting holistic strategies that drive transformative growth and uncover the hidden potential in every partner's business."
                         />
-                        <TeamMember 
+                        <TeamMember
                             imageUrl="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/IMG-20251018-WA0008.jpg"
-                            name="Israel Oyinlola" 
-                            title="Developer" 
-                            bio="Israel is a creative and dedicated developer focused on building innovative digital experiences and maintaining the technological backbone of Bammy Growth Hub." 
+                            name="Israel Oyinlola"
+                            title="Developer"
+                            bio="Israel is a skilled developer focused on building fast, scalable, and visually stunning websites that drive performance and deliver seamless user experiences."
                         />
-                        <TeamMember 
-                            imageUrl="https://picsum.photos/200/200?random=3" 
-                            name="Emmanuel Oyinlola" 
-                            title="PPC & Ads Specialist" 
-                            bio="Emmanuel is an expert at turning ad spend into revenue. He manages multi-platform campaigns with a laser focus on conversion and ROI." 
+                        <TeamMember
+                            imageUrl="https://raw.githubusercontent.com/Tossky/bammygrowthhub/main/IMG-20251018-WA0010.jpg"
+                            name="Emmanuel Oyinlola"
+                            title="PPC & Ads Specialist"
+                            bio="Emmanuel is an expert at turning ad spend into revenue. He manages multi-platform campaigns with a laser focus on conversion and ROI."
                         />
                     </div>
                 </div>
             </section>
-            
+
             {/* CTA Section */}
             <section className="py-20 bg-[#44001b] text-white">
                 <div className="max-w-3xl mx-auto px-4 text-center">
@@ -131,7 +157,6 @@ const AboutPage = () => {
                     </Link>
                 </div>
             </section>
-
         </div>
     );
 };
