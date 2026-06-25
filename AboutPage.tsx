@@ -58,11 +58,11 @@ const AboutPage = () => {
                     <div>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
                         <p className="text-gray-600 mb-6 text-lg">
-                            To empower businesses to achieve sustainable, long-term growth by delivering bespoke, data-driven digital marketing strategies. We are committed to radical transparency and a relentless pursuit of results that create a tangible impact on our clients' success.
+                            To help businesses, investors, entrepreneurs, and organizations make informed decisions, identify strategic opportunities, solve meaningful challenges, adopt future technologies, build sustainable systems, and achieve long-term growth through intelligence, innovation, education, and strategic execution.
                         </p>
                         <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
                         <p className="text-gray-600 text-lg">
-                            To be the most trusted and results-oriented digital growth consultancy, recognized for our strategic excellence, innovative approach, and the unwavering dedication of the Bammy Growth Hub team to our partners' goals.
+                            To become a globally respected growth, innovation, and future-readiness institution that empowers businesses, investors, industries, and communities to create sustainable prosperity, embrace innovation, build lasting value, and remain competitive across generations.
                         </p>
                     </div>
                     <div>
