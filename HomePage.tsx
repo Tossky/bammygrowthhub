@@ -366,7 +366,9 @@ const HomePage = () => {
       <h2 className="text-3xl font-bold text-gray-900 mb-4">Who Is Toluwalope Akano</h2>
       <p className="text-[#44001b] font-semibold text-lg mb-4">Founder & CEO, Bammy Growth Hub</p>
       <p className="text-lg text-gray-600 mb-6">
-        Toluwalope Akano is a multifaceted marketing expert and agency owner, specializing in ecommerce and business online presence growth, SEO optimization, brand development, and creative design with a passion for driving business success.
+        Toluwalope Akano is a Business & Investment Growth Strategist known for helping businesses and individuals make smarter, more profitable decisions.
+Rather than just offering marketing services, he focuses on identifying hidden opportunities, growth gaps, and costly mistakes that hold businesses and individuals back.
+Toluwalope Akano is the founder of BammyGrowthHub, where strategy meets execution to help clients grow with clarity, structure, and purpose.
       </p>
       <Link to="/about" className="font-semibold text-[#44001b] hover:text-[#2d0012] transition-colors group">
         Learn More About Our Team <span className="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
